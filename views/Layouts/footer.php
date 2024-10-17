@@ -1,4 +1,4 @@
-
+<?php ?>
 
    <footer class="topnav">
        <a href="#contact"> Contact</a>

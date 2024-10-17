@@ -10,6 +10,7 @@
 body{
 
  grid-template-rows: 0.2fr 1fr 0.2fr;
+ row-gap: 10px;
  grid-template-columns: 0.2fr 0.6fr 0.2fr;
  grid-template-areas: "header header header"
                       "SidebarLeft main SidebarRight"
@@ -18,9 +19,9 @@ body{
 
 }
 
-.container {
- display: grid;
-row-gap: 10px;
+/*.container {*/
+/* display: grid;*/
+/*row-gap: 10px;*/
  /*grid-template-rows: 20% 60% 20%;*/
  /*min-height: 100vh;*/
  /*min-width: 100dvh;*/
@@ -33,7 +34,7 @@ row-gap: 10px;
  /*grid-template-rows: 0.2fr 1fr 0.2fr;*/
  /*grid-template-columns: 0.2fr 0.6fr 0.2fr;*/
 
-}
+/*}*/
 /*.section{*/
 /*padding-left: 10px;*/
 /*column-gap: 10px;*/
@@ -47,14 +48,18 @@ row-gap: 10px;
 
 .topnav{
 display: flex;
+ flex-direction: row;
+ justify-content: space-evenly;
  background-color: blueviolet;
  overflow: hidden;
- height: 60px;
+ height: 10vh;
 
 }
 
 .topnav a{
- float: right;
+ /*display: flex;*/
+ flex-direction: row;
+ justify-content: space-evenly;
  color:white;
  text-align: center;
  padding: 14px 16px;
@@ -74,6 +79,8 @@ main{
 color: white;
  background-color: #ce50ea;
  grid-template-columns: 15% 65% 20%;
+ row-gap: 10px;
+ height: calc(100vh - 20vh);
 
 
 
@@ -92,4 +99,5 @@ footer{
 background-color: blueviolet;
 color: white;
  justify-content: space-around;
+ height: 10vh;
 }

@@ -13,8 +13,9 @@
 
 <header class="topnav" >
 
-    <a class="active" href="#home"> Home</a>
-    <a href="#profile"> profile</a>
-    <a href="#portfolio"> Portfolio</a>
-    <a href="#inloggen">Inloggen</a>
+    <a class="active" href="/"> Home</a>
+    <a href="/profile"> profile</a>
+    <a href=/portfolio"> Portfolio</a>
+    <a href="/inloggen">Inloggen</a>
+
 </header>
