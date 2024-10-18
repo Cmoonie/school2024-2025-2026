@@ -1,24 +1,10 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CinkedIN</title>
-    <link rel="stylesheet" href="/public/css/stylessheet.css">
+<?php
+include "layouts/header.php";
 
-</head>
-<body>
-
-<!--- Start header --->
-
-<header class="topnav" >
-
-    <a class="active" href="/"> Home</a>
-
-</header>
-
+?>
 
 <main>
-    <form>
+    <form action="views/Profile.views.php">
 
 
         <label for="email">E-mail:</label><br>
@@ -26,8 +12,8 @@
         <label for="wachtwoord">Wachtwoord:</label><br>
         <input type="text" id="wachtwoord" Wachtwoord="wachtwoord"><br>
 
-            <button type="submit" >Aanmelden
-        </button>
+
+            <button type="submit">Aanmelden</button>
     </form>
 </main>
 

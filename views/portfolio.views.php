@@ -1,4 +1,6 @@
 <?php ?>
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,9 +13,19 @@
 
 <!--- Start header --->
 
-<header class="nav" >
+<header class="nav">
 
     <a class="active" href="/"> Home</a>
-    <a href="/inloggen">Inloggen</a>
+    <a href="/profile"> profile</a>
+    <a href="/portfolio"> Portfolio</a>
+
 
 </header>
+
+<main>
+
+</main>
+
+<?php
+include 'layouts/footer.php';
+?>

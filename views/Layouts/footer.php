@@ -1,8 +1,8 @@
 <?php ?>
 
-   <footer class="topnav">
-       <a href="#contact"> Contact</a>
-       <a href="#about">About</a>
+   <footer class="nav">
+       <a href="/contact"> Contact</a>
+       <a href="/about">About</a>
 
     </footer>
    </body>

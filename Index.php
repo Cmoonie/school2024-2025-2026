@@ -1,4 +1,6 @@
 <?php
+require 'core/Connection.php';
+
 $uri = strtolower($_SERVER['REQUEST_URI']);
 
 Switch($uri) {
@@ -12,5 +14,21 @@ Switch($uri) {
     case '/profile':
         require "views/profile.views.php";
         break;
+
+    case '/portfolio':
+        require "views/portfolio.views.php";
+        break;
+
+        case '/about':
+            require "views/about.views.php";
+            break;
+
+
+    case '/contact':
+        require "views/contact.views.php";
+        break;
 }
+
+//$conn = new Connection();
+//die(var_dump($conn));
 
