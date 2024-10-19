@@ -1,3 +1,4 @@
+
 <?php
 
 include "layouts/header.php";
@@ -9,16 +10,15 @@ include "layouts/header.php";
 <!--- End header---->
 
     <!---Start Main-->
+    <main>
 
-<main>
-<div class="Home"
+
         <section>
             <h1>
               Welkom op CinkedIN!
 
             </h1>
         </section>
-<div>
     </main>
 
 
@@ -29,7 +29,3 @@ include "layouts/header.php";
     include "layouts/footer.php";
     ?>
 
-
-
-
-<!--</html>-->

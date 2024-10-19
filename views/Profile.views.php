@@ -15,9 +15,9 @@
 <header class="nav" >
 
     <a class="active" href="/"> Home</a>
-    <a href="/profile"> profile</a>
-    <a href=/portfolio"> Portfolio</a>
-    <a href="/inloggen">Inloggen</a>
+    <a href="/profile"> Profile</a>
+    <a href=/"portfolio"> Portfolio</a>
+    <a href="/uitloggen">Uitloggen</a>
 
 </header>
 
@@ -25,13 +25,21 @@
 
     <!---Start Main-->
     <main>
+
         <aside class="SidebarLeft">
-            <p>
-                Naam: Cecilia Anim
-                Leeftijd: 31
-                Woonplaats: Amsterdam
-                Beroep: Software Developer
-            </p>
+<div style="text-align: center">
+<!--    <a href="thumbnail_IMG_1194.JPG" target="_blank">-->
+    <img src="thumbnail_IMG_1194.JPG" height="100"
+            width="100" border="1" alt="picture of a woman"/>
+
+
+            <ul style="list-style-type:none;">
+                <li> Naam: Cecilia Anim</li>
+                <li> Leeftijd: 31</li>
+                <li> Woonplaats: Amsterdam</li>
+            <li>Beroep: Software Developer</li>
+            </ul>
+            </div>
         </aside>
 
         <section>
@@ -52,8 +60,9 @@
                 Vacatures:
             </p>
         </aside>
+
     </main>
-</body>
+
 
 
 <?php
@@ -61,3 +70,7 @@
 include "layouts/footer.php";
 
 ?>
+
+</body>
+</html>
+<!--C:/Users/cece-/PhpStormProjects/porto2-->

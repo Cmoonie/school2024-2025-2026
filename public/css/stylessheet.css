@@ -77,20 +77,46 @@ body {
 }
 
 main {
-    display: grid;
+    display:grid;
     color: white;
     background-color: #ce50ea;
-    grid-template-columns: 15% 65% 20%;
+    grid-template-columns: 20% 60% 20%;
     row-gap: 10px;
     height: calc(100vh - 20vh);
+    /*padding: 100px 40px 300px 100px*/
+}
 
+.CONTACT{
+    /*display: flex;*/
+    padding: 5px 10px 300px 430px;
+}
+
+.ABOUT{
+    display: flex;
+  padding: 10px 300px 200px 200px;
+}
+
+.HOME{
+    display: flex;
+    padding: 5px 10px 300px 330px;
+}
+.INLOG{
+    display: flex;
+    padding: 5px 10px 300px 430px;
 
 }
 
 .SidebarLeft, .SidebarRight {
     background-color: blueviolet;
     color: white;
-    padding-left: 10px;
+    padding: 1px;
+
+}
+
+.SidebarLeft{
+  padding-top: 10px;
+
+
 
 }
 

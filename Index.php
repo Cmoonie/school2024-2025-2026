@@ -27,6 +27,9 @@ Switch($uri) {
     case '/contact':
         require "views/contact.views.php";
         break;
+
+    case '/uitloggen':
+        require "views/uitloggen.views.php";
 }
 
 //$conn = new Connection();

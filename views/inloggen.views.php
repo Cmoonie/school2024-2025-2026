@@ -4,6 +4,7 @@ include "layouts/header.php";
 ?>
 
 <main>
+    <div class="INLOG">
     <form action="views/Profile.views.php">
 
 
@@ -15,6 +16,7 @@ include "layouts/header.php";
 
             <button type="submit">Aanmelden</button>
     </form>
+    </div>
 </main>
 
     <?php
