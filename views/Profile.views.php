@@ -29,8 +29,8 @@
         <aside class="SidebarLeft">
 <div style="text-align: center">
 <!--    <a href="thumbnail_IMG_1194.JPG" target="_blank">-->
-    <img src="thumbnail_IMG_1194.JPG" height="100"
-            width="100" border="1" alt="picture of a woman"/>
+    <img src="../public/Photos/thumbnail_IMG_1194.jpg" height="200"
+            width="200" border="3" alt="picture of a woman"/>
 
 
             <ul style="list-style-type:none;">

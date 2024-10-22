@@ -10,8 +10,8 @@ include "layouts/header.php";
 
     <!---Start Main-->
 
-<main>
-<div class="Home"
+<main class="HOME">
+<div class="Home1"
         <section>
             <h1>
               Welkom op CinkedIN!

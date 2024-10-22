@@ -3,8 +3,8 @@ include "layouts/header.php";
 
 ?>
 
-<main>
-    <div class="INLOG">
+<main class="INLOG">
+    <div class="INLOG1">
     <form action="views/Profile.views.php">
 
 

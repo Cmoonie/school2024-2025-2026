@@ -87,22 +87,28 @@ main {
 }
 
 .CONTACT{
-    /*display: flex;*/
-    padding: 5px 10px 300px 430px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*padding: 5px 10px 300px 430px;*/
 }
 
-.ABOUT{
+.mainabout{
     display: flex;
-  padding: 10px 300px 200px 200px;
+    justify-content: center;
+    align-items: center;
+  /*padding: 100px 30px 20px 430px;*/
 }
 
 .HOME{
     display: flex;
-    padding: 5px 10px 300px 330px;
+    justify-content: center;
+    align-items: center;
 }
 .INLOG{
     display: flex;
-    padding: 5px 10px 300px 430px;
+    justify-content: center;
+    align-items: center;
 
 }
 
