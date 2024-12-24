@@ -1,15 +1,7 @@
-<?php ?>
+<footer class="nav">
+    <a href="/contact"> Contact</a>
+    <a href="/about">About</a>
 
-   <footer class="nav">
-       <a href="/contact"> Contact</a>
-       <a href="/about">About</a>
-
-    </footer>
-   </body>
+</footer>
+</body>
 </html>
-
-
-<!----End Footer---->
-
-
-

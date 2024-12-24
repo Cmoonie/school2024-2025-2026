@@ -1,20 +1,16 @@
+
 <?php
 
 include "layouts/header.php";
 
 ?>
-
-
-
-<!--- End header---->
-
-    <!---Start Main-->
+<!---Start Main-->
 
 <main class="HOME">
 <div class="Home1"
-        <section>
+<section>
             <h1>
-              Welkom op CinkedIN!
+Welkom op CinkedIN&#128171
 
             </h1>
         </section>
@@ -23,13 +19,7 @@ include "layouts/header.php";
 
 
     <!----Start End Main--->
+<?php
 
-    <?php
-
-    include "layouts/footer.php";
-    ?>
-
-
-
-
-<!--</html>-->
+include "layouts/footer.php";
+?>

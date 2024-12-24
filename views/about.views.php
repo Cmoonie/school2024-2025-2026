@@ -1,6 +1,6 @@
 <?php
-include 'layouts/header.php';
 
+include 'Layouts/header.php';
 
 ?>
 
@@ -35,6 +35,6 @@ include 'layouts/header.php';
 
 <?php
 
-include 'layouts/footer.php';
-?>
+include 'Layouts/footer.php';
 
+?>
