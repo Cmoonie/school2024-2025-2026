@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Cecilia Anim"
     <title>CinkedIN</title>
-    <link rel="stylesheet" href="/public/css/stylessheet.css">
+    <link rel="stylesheet" href="/Public/CSS/stylesheets.css">
 
 </head>
 <body>
@@ -14,6 +15,7 @@
 <header class="nav" >
 
     <a class="active" href="/"> Home</a>
-    <a href="/inloggen">Inloggen</a>
+    <a href="/profile">Profile</a>
 
 </header>
+

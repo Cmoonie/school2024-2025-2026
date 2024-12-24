@@ -8,35 +8,14 @@
 body {
 
     grid-template-rows: 0.2fr 1fr 0.2fr;
-    row-gap: 10px;
+
     grid-template-columns: 0.2fr 0.6fr 0.2fr;
     grid-template-areas: "header header header"
                       "SidebarLeft main SidebarRight"
                       "footer footer footer";
-    /*min-width: 100dvh;*/
 
 }
 
-/*.container {*/
-/* display: grid;*/
-/*row-gap: 10px;*/
-/*grid-template-rows: 20% 60% 20%;*/
-/*min-height: 100vh;*/
-/*min-width: 100dvh;*/
-/*grid-template-areas: "header header header"*/
-/*                     "SidebarLeft main SidebarRight"*/
-/*                     "footer footer footer";*/
-/*height: 100vw;*/
-/* width: 100vw;*/
-
-/*grid-template-rows: 0.2fr 1fr 0.2fr;*/
-/*grid-template-columns: 0.2fr 0.6fr 0.2fr;*/
-
-/*}*/
-/*.section{*/
-/*padding-left: 10px;*/
-/*column-gap: 10px;*/
-/*}*/
 
 
 .nav {
@@ -46,20 +25,30 @@ body {
     background-color: blueviolet;
     overflow: hidden;
     height: 10vh;
+    border-radius: 20%;
 
 }
 
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
 
-/*.bottomnav{*/
-/* display: flex;*/
-/* flex-direction: row;*/
-/* justify-content: space-evenly;*/
-/* background-color: blueviolet;*/
-/* overflow: hidden;*/
-/* height: 10vh;*/
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f4f4f4;
+}
+
+
 
 .nav a {
-    /*display: flex;*/
+
     flex-direction: row;
     justify-content: space-evenly;
     color: white;
@@ -86,18 +75,25 @@ main {
     /*padding: 100px 40px 300px 100px*/
 }
 
+.mainprofile{
+    padding: 20px;
+    border-radius: 10%;
+    overflow:scroll;
+
+}
+
 .CONTACT{
     display: flex;
     justify-content: center;
     align-items: center;
-    /*padding: 5px 10px 300px 430px;*/
+
 }
 
 .mainabout{
     display: flex;
     justify-content: center;
     align-items: center;
-  /*padding: 100px 30px 20px 430px;*/
+
 }
 
 .HOME{
@@ -111,20 +107,28 @@ main {
     align-items: center;
 
 }
+.UITLOG{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .SidebarLeft, .SidebarRight {
     background-color: blueviolet;
     color: white;
-    padding: 1px;
-
+    padding: 10px;
+    border-radius: 10%;
 }
 
 .SidebarLeft{
-  padding-top: 10px;
-
-
+    padding-top: 10px;
 
 }
+
+section{
+    padding-top: 30px;
+}
+
 
 footer {
     display: flex;

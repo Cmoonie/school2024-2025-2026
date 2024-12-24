@@ -1,37 +1,53 @@
 <?php
-require 'core/Connection.php';
 
-$uri = strtolower($_SERVER['REQUEST_URI']);
+require 'controller/crud.controller.php';
+
+//$uri = $_SERVER['REQUEST_URI'];
+$uri = $_SERVER['PATH_INFO'] ?? '/';
 
 Switch($uri) {
 
     case '/':
-        require "views/home.views.php";
+        require 'views/Home.views.php';
         break;
-    case '/inloggen':
-        require "views/inloggen.views.php";
+
+    case '/about':
+        require "views/about.views.php";
         break;
+
+     case '/contact':
+         require "views/contact.views.php";
+         break;
+
     case '/profile':
-        require "views/profile.views.php";
+        include 'controller/profile.controller.php';
         break;
 
-    case '/portfolio':
-        require "views/portfolio.views.php";
-        break;
+      case '/profile/add':
+          create();
+          break;
 
-        case '/about':
-            require "views/about.views.php";
-            break;
+      case '/profile/update':
+          update();
+          break;
 
-
-    case '/contact':
-        require "views/contact.views.php";
-        break;
-
-    case '/uitloggen':
-        require "views/uitloggen.views.php";
+       case '/profile/delete':
+           delete();
+           break;
+    default:
+        http_response_code(404);
+      header ("https://www.google.com/search?q=routing+error");
 }
 
-//$conn = new Connection();
-//die(var_dump($conn));
+
+
+
+
+
+
+
+
+
+
+
 
