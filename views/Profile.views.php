@@ -68,7 +68,7 @@
                 <td>
                     <form action="/profile/update" method="POST" style="display:inline;">
                         <input type="hidden" name="id" value="<?= htmlspecialchars($user['id']) ?>">
-                        <input type="hidden" name="email" value="john.doe@example.com">
+                        <input type="hidden" name="email" value=" ">
                         <input type="hidden" name="name" value="update">
                         <button type="submit">Update</button>
                     </form>

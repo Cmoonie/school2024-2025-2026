@@ -5,7 +5,10 @@ function addUser($conn, $email, $name) {
     $stmt = $conn->prepare($sql);
     $stmt->bindParam(':email', $email);
     $stmt->bindParam(':name', $name);
-    echo "SQL Query: $sql";
+
+    // Vul de waarden in de SQL-string
+    $fullSql = str_replace([':email', ':name'], ["'" . $email . "'", "'" . $name . "'"], $sql);
+    echo "SQL Query: $fullSql";
 
     if ($stmt->execute()) {
         return true;
@@ -21,7 +24,10 @@ function updateUser($conn, $id, $email, $name) {
     $stmt->bindParam(':id', $id);
     $stmt->bindParam(':email', $email);
     $stmt->bindParam(':name', $name);
-    echo "SQL Query: $sql";
+
+    // Vul de waarden in de SQL-string
+    $fullSql = str_replace([':id', ':email', ':name'], ["'" . $id . "'", "'" . $email . "'", "'" . $name . "'"], $sql);
+    echo "SQL Query: $fullSql";
 
     if ($stmt->execute()) {
         return true;

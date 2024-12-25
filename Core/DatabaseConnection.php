@@ -10,12 +10,12 @@
     try {
         $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
         // set the PDO error mode to exception
-
+//        var_dump($conn);
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $stmt = $conn->query("SELECT 1");
 
 //        if ($stmt) {
-//        var_dump($conn);
+
 //        echo "Databaseverbinding is succesvol!";}
 //        return $conn;
 
