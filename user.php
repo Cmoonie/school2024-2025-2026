@@ -1,5 +1,5 @@
 <?php
-$conn= include 'connection.php'; // Zorg ervoor dat het pad klopt naar je connection.php bestand
+$conn= include 'core/connection.php'; // Zorg ervoor dat het pad klopt naar je connection.php bestand
 
 if (isset($_POST["submit"])) {
     $name = $_POST["name"];

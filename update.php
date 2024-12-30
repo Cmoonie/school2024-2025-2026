@@ -1,5 +1,5 @@
 <?php
-$conn = include 'connection.php';
+$conn = include 'core/connection.php';
 
 if (isset($_GET['updateid'])) {
     $id = $_GET['updateid'];

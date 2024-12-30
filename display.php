@@ -1,5 +1,5 @@
 <?php
-$conn= include'connection.php';
+$conn= include 'core/connection.php';
 
 
 $sql = "SELECT * FROM users";

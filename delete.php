@@ -1,6 +1,6 @@
 <?php
 
-$conn = include 'connection.php';
+$conn = include 'core/connection.php';
 
 if (isset($_GET['deleteid'])) {
     $id = $_GET['deleteid'];
