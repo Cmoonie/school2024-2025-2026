@@ -1,0 +1,139 @@
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    grid-template-rows: 0.2fr 1fr 0.2fr;
+
+    grid-template-columns: 0.2fr 0.6fr 0.2fr;
+    grid-template-areas: "header header header"
+                      "SidebarLeft main SidebarRight"
+                      "footer footer footer";
+
+}
+
+
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: blueviolet;
+    overflow: hidden;
+    height: 10vh;
+    border-radius: 20%;
+
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f4f4f4;
+}
+
+
+
+.nav a {
+
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
+}
+
+.nav a:hover {
+    background-color: #ce50ea;
+    color: white;
+
+}
+
+main {
+    display:grid;
+    color: white;
+    background-color: #ce50ea;
+    grid-template-columns: 20% 60% 20%;
+    row-gap: 10px;
+    height: calc(100vh - 20vh);
+    /*padding: 100px 40px 300px 100px*/
+}
+
+.mainprofile{
+    padding: 20px;
+    border-radius: 10%;
+    overflow:scroll;
+
+}
+
+.CONTACT{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.mainabout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.HOME{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.INLOG{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.UITLOG{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SidebarLeft, .SidebarRight {
+    background-color: blueviolet;
+    color: white;
+    padding: 10px;
+    border-radius: 10%;
+}
+
+.SidebarLeft{
+    padding-top: 10px;
+
+}
+
+section{
+    padding-top: 30px;
+}
+
+
+footer {
+    display: flex;
+    background-color: blueviolet;
+    color: white;
+    justify-content: space-around;
+    height: 10vh;
+}

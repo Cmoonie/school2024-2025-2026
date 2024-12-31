@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Cecilia Anim"
     <title>CinkedIN</title>
-    <link rel="stylesheet" href="/Public/CSS/stylesheets.css">
+    <link rel="stylesheet" href="/public/css/stylesheet.css">
 
 </head>
 <body>
