@@ -5,7 +5,7 @@ switch ($uri){
 
 
     case '/':
-        require 'view/home.views.php';
+        require 'home.views.php';
         break;
 
     case'/create':

@@ -1,4 +1,8 @@
+<?php
 
+require 'view/header.php';
+
+?>
 <!---Start Main-->
 
 <main class="HOME">
@@ -14,3 +18,6 @@ Welkom op CinkedIN&#128171
 
 
     <!----Start End Main--->
+<?php
+require 'view/footer.php';
+?>
