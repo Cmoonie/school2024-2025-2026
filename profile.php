@@ -42,6 +42,7 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </div>
     </aside>
 
+    <section class="mainprofile">
 <div class="container">
     <button class="btn btn-primary my=5"><a href="user.php" class="text-light">Add user</a>
        </button>
@@ -54,7 +55,8 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         </tr>
         </thead>
-<td><button><a href=" "> Update</a> </button>
+<td>
+    <button><a href="update.php"> Update</a> </button>
 </td>
 
         <tbody>
@@ -80,6 +82,34 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         </tbody>
     </table>
+</div>
+
+
+    </section>
+    <aside class="SidebarRight">
+        <p>Zoekresultaten binnen 30km:</p>
+        <ul>
+            <li>Amsterdam&#128204;</li>
+            <li>Osdorp</li>
+            <li>Haarlem&#128204;</li>
+            <li>Hilversum</li>
+            <li>Utrecht&#128204;</li>
+            <li>Almere</li>
+            <li>Hoofddorp</li>
+        </ul>
+        <br><hr><br>
+        <p>Laatst bekeken vacatures&#128337;:</p>
+        <ul>
+            <li>Junior software Developer bij Star Appel, Haarlem</li>
+            <li>Junior software Developer bij Opus Recruitment Solutions, Amsterdam Hybrid</li>
+            <li>Junior software Developer bij Comaen, Utrecht</li>
+        </ul>
+    </aside>
+</main>
+
+<?php include "view/footer.php"; ?>
+</body>
+</html>
 </body>
 </html>
 
