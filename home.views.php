@@ -1,6 +1,6 @@
 <?php
 
-require 'view/header.php';
+include 'view/header.php';
 
 ?>
 <!---Start Main-->
@@ -19,5 +19,5 @@ Welkom op CinkedIN&#128171
 
     <!----Start End Main--->
 <?php
-require 'view/footer.php';
+include 'view/footer.php';
 ?>

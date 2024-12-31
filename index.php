@@ -23,4 +23,12 @@ switch ($uri){
         case '/delete':
             require 'delete.php';
             break;
+
+    case '/contact':
+        require 'contact.php';
+        break;
+
+    case '/about':
+        require 'about.php';
+        break;
 }
