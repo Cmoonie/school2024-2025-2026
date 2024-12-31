@@ -52,7 +52,8 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <th scope="col">#</th>
             <th scope="col">Name</th>
             <th scope="col">Email</th>
-
+            <th scope="col">Update</th>
+            <th scope="col">Delete</th>
         </tr>
         </thead>
 

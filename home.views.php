@@ -9,7 +9,7 @@ include 'view/header.php';
 <div class="Home1"
 <section>
             <h1>
-Welkom op CinkedIN&#128171
+Welkom op mijn Portfolio&#128171
 
             </h1>
         </section>
