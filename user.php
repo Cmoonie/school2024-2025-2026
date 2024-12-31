@@ -20,7 +20,7 @@ if (empty($email) || empty($name)) {
 
 
         if ($stmt->execute()) {
-            header("location: display.php");
+            header("location: profile.php");
         } else {
             // Haal foutinformatie op als de query faalt
             echo "Error: " . implode(", ", $stmt->errorInfo());

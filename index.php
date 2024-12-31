@@ -12,8 +12,8 @@ switch ($uri){
         require 'user.php';
         break;
 
-    case '/display':
-        require 'display.php';
+    case '/profile':
+        require 'profile.php';
         break;
 
     case '/update':

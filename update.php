@@ -23,7 +23,7 @@ if (isset($_GET['updateid'])) {
 
             if ($stmt->execute()) {
                 echo "Record succesvol bijgewerkt!";
-                header('Location: display.php');
+                header('Location: profile.php');
                 exit();
             } else {
                 echo "Error: " . implode(", ", $stmt->errorInfo());

@@ -15,7 +15,7 @@ if (isset($_GET['deleteid'])) {
     if ($stmt->execute()) {
         echo "Record succesvol verwijderd!";
 
-        header('Location: display.php');
+        header('Location: profile.php');
         exit();
     } else {
 
