@@ -31,7 +31,7 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <main>
     <aside class="SidebarLeft">
         <div style="text-align: center">
-            <img src="../Public/Photos/thumbnail_IMG_1194.jpg" height="200" width="200" border="3" alt="picture of a woman"/>
+            <img src="./public/photo/thumbnail_IMG_1194.jpg" height="200" width="200" border="3" alt="picture of a woman"/>
             <br><br>
             <ul style="list-style-type:none;">
                 <li>Naam: Cecilia Anim</li>
@@ -55,9 +55,7 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         </tr>
         </thead>
-<td>
-    <button><a href="update.php"> Update</a> </button>
-</td>
+
 
         <tbody>
 

@@ -1,4 +1,4 @@
-<footer class="nav">
+<footer class="footercontainer">
     <a href="/contact"> Contact</a>
     <a href="/about">About</a>
 

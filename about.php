@@ -11,22 +11,16 @@ include 'view/header.php';
     <div class="ABOUT">
 
 
-        <ul style="list-style-type:none;">
-            <h3>Wie zijn wij</h3>
-            <li>  lorLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</li>
-            <li>  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaeca</li>
-    </div>
+
 
 
     <div class="About2">
         <ul style="list-style-type:none;">
-            <h3> Missie</h3>
-            <li> lorLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</li>
-            <li> laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaeca</li>
+            <h3> Wie ben ik</h3>
+            <li> Welkom op mijn portfolio website. Mijn naam is Cecilia en ik ben enthousiast om mijn vaardigheden, talenten en persoonlijke ontwikkeling met jou te delen.
+            Deze website heb ik gemaakt met een duidelijk doel: mijn krachten en kwaliteiten laten zien aan toekomstige werkgevers.
+            </li>
+            <li> Hier vind je een overzicht van mijn werk, mijn projecten en de ervaringen die mij hebben gevormd. Ik hoop dat deze website niet alleen een inkijkje geeft in wat ik kan, maar ook wie ik ben als persoon.</li>
         </ul>
     </div>
 

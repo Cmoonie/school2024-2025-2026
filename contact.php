@@ -7,25 +7,33 @@ include 'view/header.php';
 
     <div class="CONTACT1">
         <p>
-            <strong>Bezoekadres:</strong>
+            <strong>LinkedIN</strong>
+        </p>
         <ul style="list-style-type:none;">
-            <li>CinkedIN</li>
-            <li>Rozengracht 265</li>
-            <li>1101 AS Amsterdam</li>
+        <li>
+            <a href="https://www.linkedin.com/in/cecilia-anim-031343259/" class="linkedin-btn" target="_blank">
+                <i class="fa fa-linkedin-square"></i>
+                LinkedIn
+            </a>
+        </li>
         </ul>
     </div>
 
     <div class="CONTACT2">
+        <p>
         <strong>Telefoonnumer:</strong>
+        </p>
         <ul style="list-style-type:none;">
-            <li>020-12345678</li>
+            <li>06-13476526</li>
         </ul>
     </div>
 
-    <div class+="CONTACT3">
+    <div class="CONTACT3">
+        <p>
         <strong>E-mail</strong>
+    </p>
         <ul style="list-style-type:none;">
-            <li>CinkedIN@windesheim.nl</li>
+            <li>Ceciliaanim9@gmail.com</li>
         </ul>
     </div>
 

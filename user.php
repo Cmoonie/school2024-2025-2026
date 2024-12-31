@@ -58,7 +58,7 @@ if (empty($email) || empty($name)) {
         <button type="submit" class="btn btn-primary" name="submit">Submit</button>
     </form>
 </div>
-<h1>Welkom op mijn website!</h1>
-<p>Dit is een paragraaf tekst.</p>
+<h1>Welkom op mijn portfolio</h1>
+
 </body>
 </html>
