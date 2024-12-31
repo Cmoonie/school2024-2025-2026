@@ -1,5 +1,5 @@
 <?php
-$conn= include 'core/connection.php'; // Zorg ervoor dat het pad klopt naar je connection.php bestand
+$conn= include 'core/connection.php';
 
 if (isset($_POST["submit"])) {
     $name = $_POST["name"];
@@ -8,7 +8,7 @@ if (isset($_POST["submit"])) {
 if (empty($email) || empty($name)) {
     echo "Email en naam moeten beide ingevuld zijn.";
 } else
-    // Controleer of $conn beschikbaar is
+
     if ($conn) {
         // Voorbereiden van de SQL-query
         $sql = "INSERT INTO users (name, email) VALUES (:name, :email)";
@@ -18,7 +18,7 @@ if (empty($email) || empty($name)) {
         $stmt->bindParam(':name', $name);
         $stmt->bindParam(':email', $email);
 
-        // Query uitvoeren en controleren op succes
+
         if ($stmt->execute()) {
             header("location: display.php");
         } else {
