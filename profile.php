@@ -94,7 +94,7 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <li>Vancouver</li>
             <li>Thailand&#128204;</li>
             <li>Almere</li>
-            <li>Mexica</li>
+            <li>Mexico</li>
         </ul>
         <br><hr><br>
         <p>Programmeertalen waar ik ervaring mee hebt&#128337;:</p>
