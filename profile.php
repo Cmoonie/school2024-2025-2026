@@ -86,22 +86,22 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     </section>
     <aside class="SidebarRight">
-        <p>Zoekresultaten binnen 30km:</p>
+        <p>Landen/Steden waar ik in de toekomst wil werken:</p>
         <ul>
             <li>Amsterdam&#128204;</li>
-            <li>Osdorp</li>
+            <li>Portugal</li>
             <li>Haarlem&#128204;</li>
-            <li>Hilversum</li>
-            <li>Utrecht&#128204;</li>
+            <li>Vancouver</li>
+            <li>Thailand&#128204;</li>
             <li>Almere</li>
-            <li>Hoofddorp</li>
+            <li>Mexica</li>
         </ul>
         <br><hr><br>
-        <p>Laatst bekeken vacatures&#128337;:</p>
+        <p>Programmeertalen waar ik ervaring mee hebt&#128337;:</p>
         <ul>
-            <li>Junior software Developer bij Star Appel, Haarlem</li>
-            <li>Junior software Developer bij Opus Recruitment Solutions, Amsterdam Hybrid</li>
-            <li>Junior software Developer bij Comaen, Utrecht</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>PHP</li>
         </ul>
     </aside>
 </main>
