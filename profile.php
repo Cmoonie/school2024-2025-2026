@@ -44,7 +44,7 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     <section class="mainprofile">
 <div class="container">
-    <button class="btn btn-primary my=5"><a href="user.php" class="text-light">Add user</a>
+    <button class="btn btn-primary my=5"><a href="user.php" class="text-light">Add contact</a>
        </button>
     <table class="table">
         <thead>
