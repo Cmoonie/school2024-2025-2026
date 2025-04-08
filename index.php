@@ -31,4 +31,12 @@ switch ($uri){
     case '/about':
         require 'about.php';
         break;
+
+        case '/login':
+            require 'inloggen.php';
+            break;
+
+    case '/present':
+        require 'presentation.php';
+        break;
 }

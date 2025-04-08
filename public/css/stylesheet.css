@@ -25,7 +25,7 @@ body {
     background-color: blueviolet;
     overflow: hidden;
     height: 10vh;
-    border-radius: 20%;
+    border-radius: 1%;
 
 }
 
@@ -173,11 +173,11 @@ main {
     align-items: center;
 
 }
-.UITLOG{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/*.UITLOG{*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
 
 .SidebarLeft, .SidebarRight {
     background-color: blueviolet;

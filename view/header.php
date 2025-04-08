@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Cecilia Anim"
-    <title>CA</title>
+
     <title>Cecilia's Portfolio</title>
 
     <link rel="stylesheet" href="/public/css/stylesheet.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/public/admin.js" defer></script>  <!-- defer betekent: voer dit script uit nadat de HTML is geladen.-->
 
 </head>
 <body>
@@ -18,6 +18,7 @@
 <header class="nav" >
 
     <a class="active" href="/"> Home</a>
-    <a href="/profile">Profile</a>
+    <a href="/present">Presentation</a>
+
 
 </header>

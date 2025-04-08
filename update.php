@@ -8,21 +8,23 @@ if (isset($_GET['updateid'])) {
         // Nieuwe waarden ophalen van het formulier
         $name = $_POST['name'];
         $email = $_POST['email'];
+        $comment = $_POST['comment'];
 
         // Controleer of velden niet leeg zijn
-        if (empty($name) || empty($email)) {
-            echo "Naam en email mogen niet leeg zijn.";
+        if (empty($email) || empty($name) || empty($comment)) {
+            echo "Email, name and comment have to be filled.";
         } else {
             // Voorbereide query om SQL-injectie te voorkomen
-            $sql = "UPDATE users SET name = :name, email = :email WHERE id = :id";
+            $sql = "UPDATE users SET name = :name, email = :email, comment = :comment WHERE id = :id";
             $stmt = $conn->prepare($sql);
 
             $stmt->bindParam(':name', $name, PDO::PARAM_STR);
             $stmt->bindParam(':email', $email, PDO::PARAM_STR);
+            $stmt->bindParam(':comment', $comment, PDO::PARAM_STR);
             $stmt->bindParam(':id', $id, PDO::PARAM_INT);
 
             if ($stmt->execute()) {
-                echo "Record succesvol bijgewerkt!";
+                echo "Update successful!";
                 header('Location: profile.php');
                 exit();
             } else {
@@ -38,7 +40,7 @@ if (isset($_GET['updateid'])) {
         $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
         if (!$user) {
-            echo "Gebruiker niet gevonden.";
+            echo "User not found.";
             exit();
         }
     }
@@ -54,7 +56,6 @@ if (isset($_GET['updateid'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Update Gebruiker</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
@@ -68,6 +69,10 @@ if (isset($_GET['updateid'])) {
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Email</label>
             <input type="email" class="form-control" id="exampleInputEmail1" name="email" value="<?= htmlspecialchars($user['email']); ?>">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputComment1" class="form-label">comment</label>
+            <input type="text" class="form-control" id="exampleInputComment1" name="comment" value="<?= htmlspecialchars($user['comment']); ?>">
         </div>
         <button type="submit" class="btn btn-primary">Update</button>
     </form>

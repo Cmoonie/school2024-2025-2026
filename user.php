@@ -4,19 +4,21 @@ $conn= include 'core/connection.php';
 if (isset($_POST["submit"])) {
     $name = $_POST["name"];
     $email = $_POST["email"];
+    $comment = $_POST["comment"];
 
-if (empty($email) || empty($name)) {
-    echo "Email en naam moeten beide ingevuld zijn.";
+    if (empty($email) || empty($name) || empty($comment)) {
+        echo "Email, name and comment have to be filled.";
 } else
 
     if ($conn) {
         // Voorbereiden van de SQL-query
-        $sql = "INSERT INTO users (name, email) VALUES (:name, :email)";
+        $sql = "INSERT INTO users (name, email, comment) VALUES (:name, :email, :comment)";
         $stmt = $conn->prepare($sql);
 
         // Parameters binden
         $stmt->bindParam(':name', $name);
         $stmt->bindParam(':email', $email);
+        $stmt->bindParam(':comment', $comment);
 
 
         if ($stmt->execute()) {
@@ -40,7 +42,6 @@ if (empty($email) || empty($name)) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crud operations</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
 <div class="container">
@@ -53,6 +54,10 @@ if (empty($email) || empty($name)) {
             <label for="exampleInputEmail1" class="form-label">email</label>
             <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp">
             <div id="email" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputComment1" class="form-label">comment</label>
+            <input type="text" class="form-control" id="exampleInputComment1" name="comment">
         </div>
 
         <button type="submit" class="btn btn-primary" name="submit">Submit</button>
