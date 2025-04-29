@@ -39,4 +39,10 @@ switch ($uri){
     case '/present':
         require 'presentation.php';
         break;
+
+
+
+    case '/forum':
+        require 'forum.php';
+        break;
 }

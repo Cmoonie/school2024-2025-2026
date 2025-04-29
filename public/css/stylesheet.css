@@ -1,187 +1,185 @@
 
-* {
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    gap: 10px;
     margin: 0;
-    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+
 }
 
 
-body {
-
-    grid-template-rows: 0.2fr 1fr 0.2fr;
-
-    grid-template-columns: 0.2fr 0.6fr 0.2fr;
-    grid-template-areas: "header header header"
-                      "SidebarLeft main SidebarRight"
-                      "footer footer footer";
-
+header {
+    padding: 10px;
+    background-color: blueviolet;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 
 
 .nav {
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
-    background-color: blueviolet;
-    overflow: hidden;
-    height: 10vh;
-    border-radius: 1%;
-
 }
-
-.footercontainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: blueviolet;
-    overflow: hidden;
-    height: 10vh;
-
-
-}
-
-.footercontainer a {
-
-    flex-direction: row;
-    justify-content: space-evenly;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-
-}
-
-.footercontainer a:hover {
-    background-color: #ce50ea;
-    color: white;
-
-}
-
-.table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-
-}
-
-.table th, .table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-    background-color: #ce50ea;
-}
-
-.table th {
-    background-color: blueviolet;
-}
-
-
 
 .nav a {
-
-    flex-direction: row;
-    justify-content: space-evenly;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 10px;
     text-decoration: none;
     font-size: 17px;
-
 }
 
 .nav a:hover {
     background-color: #ce50ea;
-    color: white;
 
 }
 
-main {
-    display:grid;
-    color: white;
-    background-color: #ce50ea;
+.active {
+    /* Stijl voor de actieve link */
+    font-weight: bold;
+
+}
+
+
+main  {
+
+    display: grid;
     grid-template-columns: 20% 60% 20%;
-    row-gap: 10px;
-    height: calc(100vh - 20vh);
-    /*padding: 100px 40px 300px 100px*/
-}
-
-.mainprofile{
-    padding: 20px;
-    border-radius: 10%;
-    overflow:scroll;
-
-}
-
-.CONTACT{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 20px;
+    gap: 10px;
+    background-color: #ce50ea;
     color: white;
-
+    padding: 20px;
 }
-
-.CONTACT p {
-    margin: 10px 0;
-}
-
-.CONTACT ul {
-    padding: 0;
-    margin:0;
-}
-    .linkedin-btn {
-        font-size: 20px;
-        color: white;
-        background-color: #0077b5;
-        border: none;
-        padding: 10px 15px;
-        border-radius: 5px;
-        cursor: pointer;
-        display: inline-flex;
-        align-items: center
-    }
-
-    .linkedin-btn:hover {
-        background-color: #005582;
-    }
-
-    .linkedin-btn i {
-        margin-right: 10px;
-    }
-
-
-
-
-.mainabout{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.HOME{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.INLOG{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-/*.UITLOG{*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*}*/
 
 .SidebarLeft, .SidebarRight {
     background-color: blueviolet;
+    padding: 10px;
+    border-radius: 10%;
+}
+
+.SidebarLeft{
+    padding-top: 10px;
+
+}
+
+section{
+    padding-top: 30px;
+}
+.profilephoto{
+    transition: all 150ms ease-in-out;
+}
+
+.aiphoto{
+    border-radius: 50%;
+}
+.profilephoto:hover{
+
+    opacity: 0.7;
+    transform: scale(1.5) rotate(360deg);
+}
+
+/* Button Styles */
+.my-btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.my-btn-primary {
+    background-color: blueviolet;
     color: white;
+}
+
+.my-btn-danger {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.my-btn:hover {
+    opacity: 0.9;
+}
+
+/* Form Styles */
+.my-form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.my-form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.my-form-group {
+    margin-bottom: 20px;
+}
+
+/* Table Styles */
+.my-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+}
+
+.my-table th, .my-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+    color: black;
+}
+
+.my-table th {
+    background-color: blueviolet;
+    color: white;
+}
+
+.my-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.my-table tr:hover {
+    background-color: #e6ccff;
+}
+
+/* Container */
+.my-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Margins */
+.my-mt-5 {
+    margin-top: 3rem !important;
+}
+
+.presentation{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    gap:10px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+}
+
+.SidebarLeft, .SidebarRight {
+    background-color: blueviolet;
     padding: 10px;
     border-radius: 10%;
 }
@@ -195,12 +193,77 @@ section{
     padding-top: 30px;
 }
 
+.INLOG {
 
-footer {
-    display: flex;
-    background-color: blueviolet;
-    color: white;
-    justify-content: space-around;
-    height: 10vh;
+    display: grid;
+    place-items: center;
+     padding:15px;
+
 }
+
+
+    .foot {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        background-color: blueviolet;
+
+        }
+
+    .foot a{
+        color: white;
+        font-size: 17px;
+        padding: 10px 15px;
+    }
+
+
+
+    .foot a:hover{
+        background-color: #ce50ea;
+        color: white;
+    }
+
+        .linkedin-btn {
+            font-size: 20px;
+            color: white;
+            background-color: #0077b5;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center
+        }
+
+        .linkedin-btn:hover {
+            background-color: #005582;
+        }
+
+        .linkedin-btn i {
+            margin-right: 10px;
+        }
+
+@media (max-width: 768px) {
+    .my-table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .my-btn {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+
+
+
+}
+
+
+
+
+
+
 

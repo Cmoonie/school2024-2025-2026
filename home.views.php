@@ -4,16 +4,17 @@ include 'view/header.php';
 
 ?>
 <!---Start Main-->
+<main>
 
-<main class="HOME">
-<div class="Home1"
-<section>
+
+
             <h1>
-Welkom op mijn Portfolio&#128171
+Welkom op mijn Portfolio
 
             </h1>
-        </section>
-<div>
+
+    <img class="aiphoto" src="./public/photo/portfolio2.png" height="500" width="550" border="3" alt="picture of a woman"/>
+
     </main>
 
 

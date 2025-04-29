@@ -19,18 +19,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') { //zonder dit krijg je een melding va
 ?>
 
 <body>
-<h2> Admin Log In</h2>
+<main>
+
 
 <div class= "INLOG">
+    <h2> Admin Log In</h2>
+
 <form action="" method="POST">
     <label for="username>">username:</label>
     <input type="text" name="username" placeholder="Admin" required><br>
+    <label for="username>">password:</label>
     <input type="password" name="password"  required><br>
     <button type="submit">Login</button>
 </form>
-
 </div>
 
+</main>
 </body>
 
 <?php include 'view/footer.php'; ?>

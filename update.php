@@ -55,26 +55,26 @@ if (isset($_GET['updateid'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Update Gebruiker</title>
+    <title>Update User</title>
 </head>
 <body>
 
-<div class="container mt-5">
-    <h2>Update Gebruiker</h2>
+<div class="my-container my-mt-5">
+    <h2>Update User</h2>
     <form method="post">
-        <div class="mb-3">
-            <label for="exampleInputName1" class="form-label">Naam</label>
-            <input type="text" class="form-control" id="exampleInputName1" name="name" value="<?= htmlspecialchars($user['name']); ?>">
+        <div class="my-form-group">
+            <label class="my-form-label" for="name">Name</label>
+            <input type="text" class="my-form-control" id="exampleInputName1" name="name" value="<?= htmlspecialchars($user['name']); ?>">
         </div>
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" name="email" value="<?= htmlspecialchars($user['email']); ?>">
+        <div class="my-form-group">
+            <label class="my-form-label" for="email">Email</label>
+            <input type="email" class="my-form-control" id="exampleInputEmail1" name="email" value="<?= htmlspecialchars($user['email']); ?>">
         </div>
-        <div class="mb-3">
-            <label for="exampleInputComment1" class="form-label">comment</label>
-            <input type="text" class="form-control" id="exampleInputComment1" name="comment" value="<?= htmlspecialchars($user['comment']); ?>">
+        <div class="my-form-group">
+            <label class="my-form-label" for="comment">Comment</label>
+            <input type="text" class="my-form-control" id="exampleInputComment1" name="comment" value="<?= htmlspecialchars($user['comment']); ?>">
         </div>
-        <button type="submit" class="btn btn-primary">Update</button>
+        <button type="submit" class="my-btn my-btn-primary">Update</button>
     </form>
 </div>
 

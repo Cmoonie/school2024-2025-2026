@@ -13,9 +13,8 @@ $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 if ($conn->query("SELECT 1")) {
-    echo "Databaseverbinding is succesvol!";
 
-
+    error_log('Databaseverbinding is succesvol');
 } else {
     error_log("Connection failed: " . $conn->errorInfo()[2]);
     echo "Databaseverbinding mislukt.";

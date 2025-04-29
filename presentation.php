@@ -4,19 +4,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Cecilia Anim"
 
-    <title>Cecilia's Portfolio</title>
+    <title></title>
 
     <link rel="stylesheet" href="/public/css/stylesheet.css">
     <script src="/public/admin.js" defer></script>  <!-- defer betekent: voer dit script uit nadat de HTML is geladen.-->
 
 </head>
-<body>
+<body class="presentation">
 
 <!--- Start header --->
 
 <header class="nav" >
 
-    <a class="active" href="/"> Home</a>
+    <a class="active" href="/"> Home&#128171</a>
+
 
 
 
@@ -26,7 +27,7 @@
 <main>
     <aside class="SidebarLeft">
         <div style="text-align: center">
-            <img src="./public/photo/thumbnail_IMG_1194.jpg" height="200" width="200" border="3" alt="picture of a woman"/>
+            <img class="profilephoto" src="./public/photo/thumbnail_IMG_1194.jpg" height="200" width="200" border="3" alt="picture of a woman"/>
             <br><br>
             <ul style="list-style-type:none;">
                 <li>Naam: Cecilia Anim</li>

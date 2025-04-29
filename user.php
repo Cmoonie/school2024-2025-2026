@@ -44,23 +44,23 @@ if (isset($_POST["submit"])) {
     <title>Crud operations</title>
 </head>
 <body>
-<div class="container">
+<div class="my-container">
     <form method="post">
-        <div class="mb-3">
-            <label for="exampleInputName1" class="form-label">name</label>
-            <input type="text" class="form-control" id="exampleInputName1" name="name">
+        <div class="my-form-group">
+            <label class="my-form-label" for="name">Name</label>
+            <input type="text" class="my-form-control" id="exampleInputName1" name="name">
         </div>
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">email</label>
+        <div class="my-form-group">
+            <label class="my-form-label" for="email">Email</label>
             <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp">
             <div id="email" class="form-text">We'll never share your email with anyone else.</div>
         </div>
-        <div class="mb-3">
-            <label for="exampleInputComment1" class="form-label">comment</label>
+        <div class="my-form-group">
+            <label class="my-form-label" for="comment">Comment</label>
             <input type="text" class="form-control" id="exampleInputComment1" name="comment">
         </div>
 
-        <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+        <button type="submit" class="my-btn my-btn-primary" name="submit">Submit</button>
     </form>
 </div>
 <h1>Welkom op mijn portfolio</h1>
