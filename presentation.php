@@ -10,13 +10,16 @@
     <script src="/public/admin.js" defer></script>  <!-- defer betekent: voer dit script uit nadat de HTML is geladen.-->
 
 </head>
-<body class="presentation">
+<body>
 
 <!--- Start header --->
 
 <header class="nav" >
 
     <a class="active" href="/"> Home&#128171</a>
+    <a class="presentation" href="/presentation.php">Presentation</a>
+
+
 
 
 
