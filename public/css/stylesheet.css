@@ -255,6 +255,30 @@ section{
         padding: 8px 12px;
         font-size: 14px;
     }
+    .skills-section {
+        background-color: white;
+        color: black;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 20px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        max-width: 600px;
+    }
+
+    .skills-section h2 {
+        margin-bottom: 15px;
+        color: #6a0dad; /* paars tintje */
+    }
+
+    .skills-list {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .skills-list li {
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
 
 
 

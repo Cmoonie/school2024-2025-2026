@@ -18,7 +18,6 @@
 <header class="nav">
 
     <a class="active" href="/">Home&#128171</a>
-    <a href="/present">Presentation</a>
 
 
 </header>

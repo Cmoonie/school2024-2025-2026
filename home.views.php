@@ -15,6 +15,8 @@ Welkom op mijn Portfolio
 
     <img class="aiphoto" src="./public/photo/portfolio2.png" height="500" width="550" border="3" alt="picture of a woman"/>
 
+
+
     </main>
 
 

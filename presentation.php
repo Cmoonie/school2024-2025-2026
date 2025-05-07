@@ -29,18 +29,30 @@
         <div style="text-align: center">
             <img class="profilephoto" src="./public/photo/thumbnail_IMG_1194.jpg" height="200" width="200" border="3" alt="picture of a woman"/>
             <br><br>
+            <h3>
             <ul style="list-style-type:none;">
                 <li>Naam: Cecilia Anim</li>
                 <li>Leeftijd: 31 jaar</li>
                 <li>Woonplaats: Amsterdam</li>
                 <li>Beroep: Junior Software Developer</li>
             </ul>
+            </h3>
         </div>
     </aside>
+<section>
+    <ul style="list-style-type:none;">
+        <h3> Wie ben ik</h3>
+        <li> Welkom op mijn portfolio website. Mijn naam is Cecilia en ik ben enthousiast om mijn vaardigheden, talenten en persoonlijke ontwikkeling met jou te delen.
+            Deze website heb ik gemaakt met een duidelijk doel: mijn krachten en kwaliteiten laten zien aan toekomstige werkgevers.
+        </li>
+        <li> Hier vind je een overzicht van mijn werk, mijn projecten en de ervaringen die mij hebben gevormd. Ik hoop dat deze website niet alleen een inkijkje geeft in wat ik kan, maar ook wie ik ben als persoon.</li>
+    </ul>
+    </div>
 
+</section>
 
     <aside class="SidebarRight">
-        <p>Landen/Steden waar ik in de toekomst wil werken:</p>
+        <h2>Landen/Steden waar ik in de toekomst wil werken:</h2>
         <ul>
             <li>Amsterdam&#128204;</li>
             <li>Portugal</li>
@@ -51,11 +63,18 @@
             <li>Mexico</li>
         </ul>
         <br><hr><br>
-        <p>Programmeertalen waar ik ervaring mee hebt&#128337;:</p>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>PHP</li>
+
+            <section class="skills-section">
+                <h2>Programmeertalen waar ik ervaring mee hebt&#128337;</h2>
+                <ul class="skills-list">
+                    <li>💻 HTML & CSS</li>
+                    <li>🔧 PHP & Laravel</li>
+                    <li>🛠️ JavaScript (basis)</li>
+                    <li>🗄️ SQL & phpMyAdmin</li>
+                    <li>🧠 Git & GitHub</li>
+                    <li>📝 Visual Studio Code</li>
+                </ul>
+            </section>
 
 
         </ul>
